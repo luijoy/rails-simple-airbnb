@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="text-center">
+      <h1>Flats</h1>
+
+      <% @flats.each do |flat| %>
+      <li>
+      <strong><%= flat.name %><br/></strong>
+      <br>
+      <em><%= flat.address %></em>
+      <br>
+      <br>
+      <%= flat.description %>
+      <br>
+      💰 <%= flat.price_per_night %>
+
+      👽 <%= flat.number_of_guests %>
+      </li>
+      <br>
+      <% end %>
+    </div>
+  </div>
+</div>
